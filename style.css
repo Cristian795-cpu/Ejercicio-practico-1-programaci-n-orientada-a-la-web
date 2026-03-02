@@ -1,0 +1,192 @@
+/*Variables globales */
+:root {
+    /* Paleta de colores */
+    --dark-brown: #664148;
+    --light-brown: #fffdfe;
+    --white: rgb(255, 255, 255);
+    --dark-green: #444D38;
+    --light-green: #5F7049;
+    --razzmatazz: #AAAB83;
+    --yellow: #DBD7A9;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 55px;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: var(--razzmatazz);
+}
+
+#logo {
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    background-color: var(--dark-green);
+}
+
+.contenido {
+    width: 100%;
+    height: 1700px;
+    background-color: var(--light-brown);
+    overflow: auto;
+}
+
+h2 {
+    width: 225px;
+    font-size: 30px;
+    margin-left: 100px;
+    border-bottom: solid 7px var(--dark-brown);
+    color: var(--dark-brown);
+}
+
+article {
+    width: 100%;
+    height: 646px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 100px;
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-radius: 7px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--dark-brown);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 7px 30px var(--dark-brown);
+}
+
+.img-card {
+    width: 380px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    font-size: 25px;
+    color: var(--dark-brown);
+}
+
+.description {
+    width: 300px;
+    font-size: 15;
+    margin-top: 0;
+    color: var(--dark-green);
+}
+
+.price {
+    font-size: 30px;
+    color: var(--dark-brown);
+}
+
+.btn-whislist{
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+    background-color: var(--dark-green);
+    color: var(--razzmatazz);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-whislist:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+#contacto {
+    font-size: 25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-green);
+    color: var(--yellow);
+    height: 200px;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 900px) {
+    .card {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    article {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px) {
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 25px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contenido {
+        height: 1750px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    article {
+        justify-content: center;
+    }
+
+    .btn-whislist{
+        padding: 10px 30px 10px 30px;
+    }
+}
+
