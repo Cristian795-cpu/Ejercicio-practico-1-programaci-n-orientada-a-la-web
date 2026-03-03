@@ -29,6 +29,7 @@ h1 {
     height: 100px;
     padding-top: 25px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     padding-bottom: 25px;
     background-color: var(--dark-green);
@@ -135,6 +136,37 @@ h3 {
     height: 200px;
 }
 
+.contador {
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+}
+
+.delete {
+    width: 200px;
+    height: 50px;
+    background-color: var(--yellow);
+    margin-left: 50px;
+    border-radius: 10px; 
+    border: none;
+    font-weight: bold;
+    color: var(--dark-green);
+    transition: background 0.5s ease;
+}
+
+.delete:hover {
+    background-color: var(--razzmatazz);
+}
 
 /* Media Queries para Responsividad */
 @media (max-width: 900px) {
@@ -148,6 +180,11 @@ h3 {
     article {
         justify-content: center;
     }
+
+    img {
+        width: 900px;
+        height: 100%;
+    }
 }
 
 @media (max-width: 520px) {
@@ -156,6 +193,7 @@ h3 {
         align-items: center;
         justify-content: center;
         height: 150px;
+        width: 100%;
     }
 
     h1 {
@@ -188,5 +226,81 @@ h3 {
     .btn-whislist{
         padding: 10px 30px 10px 30px;
     }
+
+    .contacto {
+        font-size: 20px;
+        height: 250px;
+    }
 }
 
+@media (max-width: 1024px) {
+    .contador, .delete{
+        width: 150px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 344px) and (max-width: 968px) {
+
+    h1 {
+        margin-left: 10%;
+    }
+    
+    #logo {
+        height: 200px;
+        text-align: center;
+    }
+    
+    nav {
+       display: grid;
+       grid-column: 2; 
+       margin-left: 30%;
+    }
+
+    .contador, .delete{
+        width: 150px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 412px) {
+
+    h1 {
+        margin-left: 4%;
+    }
+    
+    #logo {
+        height: 200px;
+        text-align: center;
+    }
+    
+    nav {
+       display: grid;
+       grid-column: 2; 
+       margin-left: 1%;
+    }
+
+    .contador, .delete{
+        width: 150px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        margin-left: 3%;
+    }
+
+    nav {
+       display: grid;
+       grid-column: 2; 
+       margin-left: 1%;
+    }
+}
