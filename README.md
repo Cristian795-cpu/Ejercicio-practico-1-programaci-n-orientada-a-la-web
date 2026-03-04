@@ -19,7 +19,7 @@ La startup **TechGadget Store**, especializada en dispositivos electrónicos inn
 - ✅ **Contador dinámico**: Actualización en tiempo real
 - ✅ **Botones inteligentes**: Cambian de estado al agregar
 - ✅ **Limpiar wishlist**: Botón para resetear todo
-- ✅ **Sin duplicados**: Control de productos repetidos
+- ✅ **Sin duplicados**: Control de versiones con ramas (develop, feature, main)
 
 ## 🚀 Tecnologías Utilizadas
 - **HTML5** - Estructura semántica
@@ -30,8 +30,8 @@ La startup **TechGadget Store**, especializada en dispositivos electrónicos inn
 ## 👨‍💻 Autor
 **Cristian Terán**
 - GitHub: [@Lawliet-cpu](https://github.com/Cristian795-cpu)
-- LinkedIn: [ir a perfil](www.linkedin.com/in/cristian-teran-036b42328)
-- Correo: cristianteran795@gmail.
+- LinkedIn: [linkedin.com/in/cristian-teran-036b42328](https://www.linkedin.com/in/cristian-teran-036b42328)
+- Correo: cristianteran795@gmail.com
 
 ¡Si te gustó este proyecto, no dudes en darle una estrella! ⭐️
 
